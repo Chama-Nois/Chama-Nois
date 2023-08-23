@@ -1,0 +1,9 @@
+.footer {
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+    /* Defina a altura desejada para o seu footer */
+}
