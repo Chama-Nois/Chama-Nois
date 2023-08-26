@@ -7,3 +7,11 @@
     height: 200px;
     /* Defina a altura desejada para o seu footer */
 }
+
+.espaco-top {
+    padding: 60px 0px;
+    
+}
+.b-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
