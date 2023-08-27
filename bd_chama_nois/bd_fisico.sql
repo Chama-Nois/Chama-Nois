@@ -6,8 +6,8 @@ endereco VARCHAR(100),
 cnpj CHAR(14) UNIQUE,
 telefone VARCHAR(13),
 email VARCHAR(100),
-horario_inicio DATETIME,
-horario_termino DATETIME,
+horario_inicio TIME,
+horario_termino TIME,
 avaliacao VARCHAR(2)
 );
 
@@ -75,7 +75,7 @@ rg VARCHAR(12) UNIQUE,
 nome VARCHAR(100),
 telefone VARCHAR(13),
 endereco VARCHAR(100),
-data_cadastro DATETIME,
+data_cadastro DATE,
 preferencias VARCHAR(255),
 email VARCHAR(100),
 FOREIGN KEY(periferia_id) REFERENCES periferias (periferia_id)
@@ -83,7 +83,7 @@ FOREIGN KEY(periferia_id) REFERENCES periferias (periferia_id)
 
 CREATE TABLE contratacoes (
 contratacao_id VARCHAR(10) PRIMARY KEY,
-data_inicio DATETIME,
+data_inicio DATE,
 desempenho VARCHAR(255),
 observações VARCHAR(255),
 beneficios VARCHAR(255)
@@ -95,8 +95,8 @@ periferia_id VARCHAR(10),
 cpf CHAR(11) UNIQUE,
 rg VARCHAR(12) UNIQUE,
 nome VARCHAR(100),
-data_nascimento DATETIME,
-data_inicio DATETIME,
+data_nascimento DATE,
+data_inicio DATE,
 escola VARCHAR(100),
 turno_escolar VARCHAR(5),
 FOREIGN KEY(periferia_id) REFERENCES periferias (periferia_id)
@@ -106,7 +106,7 @@ CREATE TABLE oportunidades_candidatos (
 oportunidades_candidatos_id VARCHAR(10) PRIMARY KEY,
 candidato_id VARCHAR(10),
 oportunidade_id VARCHAR(10),
-data_candidatura DATETIME,
+data_candidatura DATE,
 status VARCHAR(10),
 FOREIGN KEY(candidato_id) REFERENCES candidatos (candidato_id),
 FOREIGN KEY(oportunidade_id) REFERENCES oportunidades (oportunidade_id)
@@ -117,7 +117,7 @@ periferias_oportunidades_id VARCHAR(10) PRIMARY KEY,
 periferia_id VARCHAR(10),
 oportunidade_id VARCHAR(10),
 status VARCHAR(10),
-data DATETIME,
+data DATE,
 FOREIGN KEY(periferia_id) REFERENCES periferias (periferia_id),
 FOREIGN KEY(oportunidade_id) REFERENCES oportunidades (oportunidade_id)
 );
@@ -143,7 +143,7 @@ CREATE TABLE periferias_parcerias (
 periferias_parcerias_id VARCHAR(10) PRIMARY KEY,
 parcerias_id VARCHAR(10),
 periferia_id VARCHAR(10),
-data_inicio DATETIME,
+data_inicio DATE,
 benificio VARCHAR(255),
 FOREIGN KEY(parcerias_id) REFERENCES parcerias_externas (parcerias_id),
 FOREIGN KEY(periferia_id) REFERENCES periferias (periferia_id)
