@@ -13,11 +13,11 @@ Além disso, o repositório inclui os arquivos do site, que conta com quatro pá
 | Líder do Projeto        | João Alves                              |
 | Vice-Líder              | João Pedro                              |
 | Planejamento            | Joice Caroline, João Alves, Joilton Ramalho |
-| Pesquisa                | Joice Caroline, João Alves              |
+| Pesquisa                | Joice Caroline, João Alves, João Gabriel |
 | Preparação Power Point  | Joice Caroline                          |
 | Banco de Dados          | Joilton Ramalho                         |
 | Prototipagem            | Jefferson Santos                        |
-| Desenvolvimento do Site | Jefferson Santos, João Pedro           |
+| Desenvolvimento do Site | Jefferson Santos, João Pedro, Joilton Ramalho |
 | Identidade Visual       | João Gabriel                            |
 
 
