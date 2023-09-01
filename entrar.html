@@ -1,110 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chama Nois</title>
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../Chama-Nois/css/entrar.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="rounded-bottom" style="background-color: #ff9900">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"
-          ><img src="img/icon.png" alt="" width="100"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Alterna navegação"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto text-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"
-                >HOME <span class="sr-only">(Página atual)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="empresas.html"
-                >EMPRESAS <span class="sr-only">(Página atual)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">CONTATO</a>
-            </li>
-          </ul>
-          <span class="navbar d-inline-block">
-            <a href="cadastro.html" class="btn btn-outline-dark">CADASTRAR</a>
-          </span>
-          <span class="navbar d-inline-block">
-            <a href="entrar.html" class="btn btn-outline-dark mr-3">ENTRAR</a>
-          </span>
-        </div>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - Chama Nois</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Chama-Nois/css/entrar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="rounded-bottom" style="background-color: #ff9900;">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="img/icon.png" alt="" width="100"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center mx-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html" target="_self">HOME</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="produtos.html" target="_self">PRODUTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html" target="_self">CONTATO</a>
+                    </li>
+                </ul>
+                <span class="navbar d-inline-block float-left">
+                    <a href="#" class="btn btn-outline-dark mr-3" target="_self">ENTRAR <span class="sr-only">(Página
+                        atual)</span></a>
+                </span>
+                <span class="navbar d-inline-block float-right">
+                    <a href="cadastro.html" class="btn btn-outline-dark" target="_self">CADASTRAR</a>
+                </span>
+            </div>
+        </nav>
     </header>
 
-    <div class="container my-3">
-      <div class="login-container p-4">
-        <div class="agency-logo"></div>
-        <h2 class="mt-3">Bem-vindo ao Chama Nois</h2>
-        <form>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" required />
-          </div>
-          <div class="form-group">
-            <label for="password">Senha</label>
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              required
-            />
-          </div>
-          <button type="submit" class="btn btn-primary btn-login btn-block">
-            Entrar
-          </button>
-        </form>
-        <div class="text-center mt-3">
-          <p>
-            Não tem uma conta?
-            <a href="cadastro.html" class="btn-signup text-white"
-              >Cadastre-se</a
-            >
-          </p>
+    <div class="container my-4">
+        <div class="login-container p-4">
+            <div class="agency-logo"></div>
+            <h2 class="mt-3">Bem-vindo ao Chama Nois</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-login btn-block">Entrar</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>Não tem uma conta? <a href="cadastro.html" class="btn-signup text-white">Cadastre-se</a></p>
+            </div>
         </div>
-      </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

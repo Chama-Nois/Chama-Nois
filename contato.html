@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Contato - Chama Nois</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../Chama-Nois/css/contato.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -19,63 +18,52 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto text-center">
+                <ul class="navbar-nav text-center mx-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(Página
-                                atual)</span></a>
+                        <a class="nav-link" href="index.html" target="_self">HOME</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="empresas.html">EMPRESAS <span class="sr-only">(Página atual)</span></a>
+                        <a class="nav-link" href="produtos.html" target="_self">PRODUTOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html">CONTATO</a>
+                        <a class="nav-link" href="#" target="_self">CONTATO <span class="sr-only">(Página atual)</span></a>
                     </li>
                 </ul>
-                <span class="navbar d-inline-block">
-                    <a href="cadastro.html" class="btn btn-outline-dark">CADASTRAR</a>
+                <span class="navbar d-inline-block float-left">
+                    <a href="entrar.html" class="btn btn-outline-dark mr-3" target="_self">ENTRAR</a>
                 </span>
-                <span class="navbar d-inline-block">
-                    <a href="entrar.html" class="btn btn-outline-dark mr-3">ENTRAR</a>
-                </span>
+                <span class="navbar d-inline-block float-right">
+                    <a href="cadastro.html" class="btn btn-outline-dark" target="_self">CADASTRAR</a>
+                </span> 
             </div>
-
-
         </nav>
     </header>
-
 
     <div class="container">
         <header class="text-center mt-5">
             <h1 class="text-orange">Fale Conosco</h1>
             <p>Entre em contato conosco para esclarecer suas dúvidas ou fazer sugestões!</p>
         </header>
-    
         <form action="enviar_mensagem.php" method="POST" class="mt-4 p-4 border border-orange rounded">
             <div class="form-group">
                 <label for="nome" class="text-orange">Nome:</label>
                 <input type="text" id="nome" name="nome" class="form-control" required>
             </div>
-    
             <div class="form-group">
                 <label for="email" class="text-orange">E-mail:</label>
                 <input type="email" id="email" name="email" class="form-control" required>
             </div>
-    
             <div class="form-group">
                 <label for="assunto" class="text-orange">Assunto:</label>
                 <input type="text" id="assunto" name="assunto" class="form-control" required>
             </div>
-    
             <div class="form-group">
                 <label for="mensagem" class="text-orange">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" class="form-control" required></textarea>
             </div>
-    
             <button type="submit" class="btn btn-orange">Enviar Mensagem</button>
         </form>
     </div>
-    
-    
     
     <div class="rodape mt-5 ">
         <footer class="text-black text-center p-5" style="background-color: #ff9900;">
@@ -107,11 +95,7 @@
             </div>
         </footer>
     </div>
-
-
-
-
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

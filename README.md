@@ -19,3 +19,12 @@ Além disso, o repositório inclui os arquivos do site, que conta com quatro pá
 | Prototipagem            | Jefferson Santos                        |
 | Desenvolvimento do Site | Jefferson Santos, João Pedro           |
 | Identidade Visual       | João Gabriel                            |
+
+
+## Banco de dados Conceitual
+
+![Banco de dados Conceitual](https://github.com/Chama-Nois/Chama-Nois/blob/main/img/bd_conceitual.jpg)
+
+## Banco de dados Lógico
+
+![Banco de dados Lógico](https://github.com/Chama-Nois/Chama-Nois/blob/main/img/bd_logico.jpg)
