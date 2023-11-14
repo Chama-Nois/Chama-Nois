@@ -3,12 +3,14 @@ package com.chamanois.servicesimpl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.chamanois.model.Empresas;
 import com.chamanois.repositories.EmpresasRepository;
 import com.chamanois.services.EmpresasService;
 
+@Service
 public class EmpresasServiceImpl implements EmpresasService {
 
 	@Autowired
