@@ -25,36 +25,36 @@ public class ProdutosController {
 	public String listProdutos(Model model) {
 		List<Produtos> produtos = produtosService.getAllProdutos();
 		model.addAttribute("produtos", produtos);
-		return "ListarProdutos";
+		return "listarProdutos";
 	}
 
-	@GetMapping("/novo-produto")
+	@GetMapping("/novo")
 	public String showFormForAdd(Model model) {
 		Produtos produtos = new Produtos();
 		model.addAttribute("produtos", produtos);
-		return "produtosForm";
+		return "formProdutos";
 	}
 
-	@PostMapping("/salvar-produto")
+	@PostMapping("/salvar")
 	public String saveProduto(@ModelAttribute("produtos") Produtos produtos) {
 		produtosService.saveProduto(produtos);
 		return "redirect:/produtos";
 	}
 
-	@GetMapping("/editar-produto/{id}")
+	@GetMapping("/editar/{id}")
 	public String showFormForUpdate(@PathVariable Long id, Model model) {
 		Produtos produtos = produtosService.getProdutoById(id);
 		model.addAttribute("produtos", produtos);
-		return "editarProdutos";
+		return "atualizarProdutos";
 	}
 
-	@PostMapping("/editar-produto/{id}")
+	@PostMapping("/editar/{id}")
 	public String updateProduto(@PathVariable Long id, @ModelAttribute("produtos") Produtos produtos) {
 		produtosService.updateProduto(id, produtos);
 		return "redirect:/produtos";
 	}
 
-	@GetMapping("/deletar-produto/{id}")
+	@GetMapping("/deletar/{id}")
 	public String deleteProduto(@PathVariable Long id) {
 		produtosService.deleteProduto(id);
 		return "redirect:/produtos";

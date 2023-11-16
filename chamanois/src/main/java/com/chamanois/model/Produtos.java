@@ -17,6 +17,7 @@ public class Produtos {
 	private double valorProduto;
 	private String descricaoProduto;
 	private int avaliacaoProduto;
+	private String imgUrl;
 
 	@ManyToOne
 	@JoinColumn(name = "idCliente")
@@ -31,12 +32,15 @@ public class Produtos {
 	}
 
 	public Produtos(Long idProduto, String nomeProduto, double valorProduto, String descricaoProduto,
-			int avaliacaoProduto) {
+			int avaliacaoProduto, String imgUrl, Clientes clientes, Empresas empresas) {
 		this.idProduto = idProduto;
 		this.nomeProduto = nomeProduto;
 		this.valorProduto = valorProduto;
 		this.descricaoProduto = descricaoProduto;
 		this.avaliacaoProduto = avaliacaoProduto;
+		this.imgUrl = imgUrl;
+		this.clientes = clientes;
+		this.empresas = empresas;
 	}
 
 	public Long getIdProduto() {
@@ -93,6 +97,14 @@ public class Produtos {
 
 	public void setEmpresas(Empresas empresas) {
 		this.empresas = empresas;
+	}
+
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
 	}
 
 }

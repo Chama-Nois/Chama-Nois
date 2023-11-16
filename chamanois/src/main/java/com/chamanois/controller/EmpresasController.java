@@ -25,36 +25,36 @@ public class EmpresasController {
 	public String listEmpresas(Model model) {
 		List<Empresas> empresas = empresasService.getAllEmpresas();
 		model.addAttribute("empresas", empresas);
-		return "ListarEmpresas";
+		return "listarEmpresas";
 	}
 
-	@GetMapping("/nova-empresa")
+	@GetMapping("/nova")
 	public String showFormForAdd(Model model) {
 		Empresas empresas = new Empresas();
 		model.addAttribute("empresas", empresas);
-		return "empresasForm";
+		return "formEmpresas";
 	}
 
-	@PostMapping("/salvar-empresa")
+	@PostMapping("/salvar")
 	public String saveEmpresa(@ModelAttribute("empresas") Empresas empresas) {
 		empresasService.saveEmpresa(empresas);
 		return "redirect:/empresas";
 	}
 
-	@GetMapping("/editar-empresa/{id}")
+	@GetMapping("/editar/{id}")
 	public String showFormForUpdate(@PathVariable Long id, Model model) {
 		Empresas empresas = empresasService.getEmpresaById(id);
 		model.addAttribute("empresas", empresas);
-		return "editarEmpresa";
+		return "atualizarEmpresas";
 	}
 
-	@PostMapping("/editar-empresa/{id}")
+	@PostMapping("/editar/{id}")
 	public String updateEmpresa(@PathVariable Long id, @ModelAttribute("empresas") Empresas empresas) {
 		empresasService.updateEmpresa(id, empresas);
 		return "redirect:/empresas";
 	}
 
-	@GetMapping("/deletar-empresa/{id}")
+	@GetMapping("/deletar/{id}")
 	public String deleteEmpresa(@PathVariable Long id) {
 		empresasService.deleteEmpresa(id);
 		return "redirect:/empresas";
