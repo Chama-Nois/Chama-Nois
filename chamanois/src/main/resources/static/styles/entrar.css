@@ -1,48 +1,47 @@
 body {
-  background-color: #f0f7fb;
+	background-color: #f0f7fb;
 }
 
 .login-container {
-  max-width: 550px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f39200;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: #fff;
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f39200;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	color: #fff;
 }
 
 .login-container h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
+	text-align: center;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
 }
 
 .form-group label {
-  color: #f0f7fb;
+	color: #f0f7fb;
 }
 
 .btn-login {
-  background-color: #0056b3;
-  border-color: #0056b3;
+	background-color: #0056b3;
+	border-color: #0056b3;
 }
 
 .btn-login:hover {
-  background-color: #003c80;
-  border-color: #003c80;
+	background-color: #003c80;
+	border-color: #003c80;
 }
 
 .btn-signup:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .agency-logo {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  display: block;
-  border-radius: 50%;
-  background: url(../img/icon.png) no-repeat center center;
-  background-size: cover;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 50%;
+	background: url(https://raw.githubusercontent.com/Chama-Nois/Chama-Nois/Joilton/imagens/icon.png) no-repeat center center;
+	background-size: cover;
 }
-
