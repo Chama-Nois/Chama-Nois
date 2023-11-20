@@ -42,6 +42,7 @@ public class ProdutosServiceImpl implements ProdutosService {
 			produtoExistente.setDescricaoProduto(produtoAtualizado.getDescricaoProduto());
 			produtoExistente.setAvaliacaoProduto(produtoAtualizado.getAvaliacaoProduto());
 			produtoExistente.setImgUrl(produtoAtualizado.getImgUrl());
+
 			return produtosRepository.save(produtoExistente);
 		} else {
 			throw new RuntimeException("Produto com o ID" + idProduto + "não foi encontrado.");

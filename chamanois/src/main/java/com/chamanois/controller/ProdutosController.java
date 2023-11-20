@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.chamanois.model.Empresas;
 import com.chamanois.model.Produtos;
+import com.chamanois.services.EmpresasService;
 import com.chamanois.services.ProdutosService;
 
 @Controller
@@ -20,6 +22,9 @@ public class ProdutosController {
 
 	@Autowired
 	private ProdutosService produtosService;
+
+	@Autowired
+	private EmpresasService empresasService;
 
 	@GetMapping
 	public String listProdutos(Model model) {
@@ -31,7 +36,9 @@ public class ProdutosController {
 	@GetMapping("/novo")
 	public String showFormForAdd(Model model) {
 		Produtos produtos = new Produtos();
+		List<Empresas> empresas = empresasService.getAllEmpresas();
 		model.addAttribute("produtos", produtos);
+		model.addAttribute("empresas", empresas);
 		return "formProdutos";
 	}
 
@@ -45,6 +52,7 @@ public class ProdutosController {
 	public String showFormForUpdate(@PathVariable Long id, Model model) {
 		Produtos produtos = produtosService.getProdutoById(id);
 		model.addAttribute("produtos", produtos);
+		model.addAttribute("empresas", empresasService.getAllEmpresas());
 		return "atualizarProdutos";
 	}
 

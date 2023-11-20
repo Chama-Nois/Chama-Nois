@@ -49,41 +49,21 @@
 
 
 	<div class="container mt-3">
-		<h2>Produtos</h2>
-		<a class="btn btn-primary mb-2" th:href="@{/produtos/novo}">Adicionar Produto</a>
-		<table class="table">
-			<thead class="thead-dark">
-				<tr>
-					<th>ID</th>
-					<th>Produto</th>
-					<th>Nome</th>
-					<th>Descrição</th>
-					<th>Avaliação</th>
-					<th>Valor</th>
-					<th></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr th:each="produtos : ${produtos}">
-					<td th:text="${produtos.idProduto}"></td>
-					<td>
-						<img th:src="${produtos.imgUrl}" alt="Imagem do Produto"
-							style="max-width: 100px; max-height: 100px;" />
-					</td>
-					<td th:text="${produtos.nomeProduto}"></td>
-					<td th:text="${produtos.descricaoProduto}"></td>
-					<td th:text="${produtos.avaliacaoProduto}"></td>
-					<td><span th:text="'R$ ' + ${produtos.valorProduto}"></span></td>
+		<a class="btn btn-warning btn-lg btn-block mb-2" th:href="@{/produtos/novo}">Adicionar Produto</a>
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+			<div th:each="produto : ${produtos}" class="col-md-4 d-flex">
+				<div class="p-2 border flex-fill mb-4">
+					<img class="product-image mx-auto d-block" th:src="${produto.imgUrl}" alt="Imagem do Produto">
+					<h3 class="product-title text-center" th:text="${produto.nomeProduto}"></h3>
+					<p class="text-center" th:text="${produto.descricaoProduto}"></p>
+					<p class="lead font-weight-bold"><strong th:text="'R$ ' + ${produto.valorProduto}"></strong></p>
+					<a class="btn btn-warning">Comprar Agora</a>
+					<a class="btn btn-primary" th:href="@{'/produtos/editar/' + ${produto.idProduto}}">Editar</a>
+					<a class="btn btn-danger" th:href="@{'/produtos/deletar/' + ${produto.idProduto}}">Excluir</a>
+				</div>
+			</div>
+		</div>
 
-					<td>
-						<a class="btn btn-info btn-sm"
-							th:href="@{/produtos/editar/{id}(id=${produtos.idProduto})}">Editar</a>
-						<a class="btn btn-danger btn-sm"
-							th:href="@{/produtos/deletar/{id}(id=${produtos.idProduto})}">Excluir</a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
 	</div>
 
 	<div class="rodape mt-5">
