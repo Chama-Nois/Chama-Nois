@@ -31,7 +31,7 @@ Nota: Este projeto faz parte de uma atividade do curso RecodePro, tendo como obj
         Banco de dados físico
     </h3>
     <div>
-        <p>Clique para acessar o código sql: <a href="https://github.com/Chama-Nois/Chama-Nois/blob/Joilton/banco_de_dados/modelo_fisico.sql">banco de dados físico </a></p>
+        <p>Clique para acessar o código sql: <a href="https://github.com/Chama-Nois/Chama-Nois/blob/main/banco_de_dados/modelo_fisico.sql">banco de dados físico </a></p>
     </div>
     <hr>
     <h3>
